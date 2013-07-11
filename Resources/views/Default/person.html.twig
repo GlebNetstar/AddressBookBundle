@@ -1,0 +1,70 @@
+{% extends 'NetstarAddressBookBundle::layout.html.twig' %}
+
+{% block content %}
+  <h1>Person form</h1>
+  
+  <form action="{{ path('netstar_address_book_save') }}" method="post" {{ form_enctype(form) }}>
+          {{ form_errors(form) }}
+          
+          <table>
+            <tr>
+              <td>
+                {{ form_label(form.first_name) }}:
+                {{ form_widget(form.first_name) }}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                {{ form_label(form.last_name) }}:
+                {{ form_widget(form.last_name) }}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                {{ form_label(form.address1) }}:
+                {{ form_widget(form.address1) }}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                {{ form_label(form.address2) }}:
+                {{ form_widget(form.address2) }}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                {{ form_label(form.city) }}:
+                {{ form_widget(form.city) }}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                {{ form_label(form.zip) }}:
+                {{ form_widget(form.zip) }}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                {{ form_label(form.phone1) }}:
+                {{ form_widget(form.phone1) }}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                {{ form_label(form.phone2) }}:
+                {{ form_widget(form.phone2) }}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button>Save</button>
+              </td>
+            </tr>
+          </table>
+          
+          {{ form_rest(form) }}
+          
+        </form>
+  
+  
+{% endblock %}

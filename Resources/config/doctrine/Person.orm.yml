@@ -1,0 +1,43 @@
+Netstar\AddressBookBundle\Entity\Person:
+  type: entity
+  table: task__address_book
+  fields:
+    id:
+      id: true
+      type: integer
+      unsigned: false
+      generator:
+        strategy: IDENTITY
+    first_name:
+      type: string
+      length: 50
+      nullable: true
+    last_name:
+      type: string
+      length: 50
+      nullable: true
+    address1:
+      type: string
+      length: 100
+      nullable: true
+    address2:
+      type: string
+      length: 100
+      nullable: true
+    city:
+      type: string
+      length: 50
+      nullable: true
+    zip:
+      type: string
+      length: 5
+      nullable: true
+    phone1:
+      type: string
+      length: 20
+      nullable: true
+    phone2:
+      type: string
+      length: 20
+      nullable: true
+  lifecycleCallbacks: {  }

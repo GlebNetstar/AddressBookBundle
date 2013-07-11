@@ -1,0 +1,20 @@
+
+netstar_address_book_list:
+    pattern:   /netstar-address-book/list
+    defaults:  { _controller: NetstarAddressBookBundle:Default:list }
+
+netstar_address_book_add:
+    pattern:   /netstar-address-book/add
+    defaults:  { _controller: NetstarAddressBookBundle:Default:add }
+
+netstar_address_book_edit:
+    pattern:   /netstar-address-book/edit/{id}
+    defaults:  { _controller: NetstarAddressBookBundle:Default:edit }
+
+netstar_address_book_delete:
+    pattern:   /netstar-address-book/delete/{id}
+    defaults:  { _controller: NetstarAddressBookBundle:Default:delete }
+
+netstar_address_book_save:
+    pattern:   /netstar-address-book/save
+    defaults:  { _controller: NetstarAddressBookBundle:Default:save }

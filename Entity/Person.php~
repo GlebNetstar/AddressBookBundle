@@ -1,0 +1,195 @@
+<?php
+
+namespace Netstar\AddressBookBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Person
+ */
+class Person
+{
+    /**
+     * @var integer
+     */
+    private $id;
+
+    /**
+     * @var string
+     */
+    private $name;
+
+    /**
+     * @var integer
+     */
+    private $position;
+
+    /**
+     * @var integer
+     */
+    private $mapX;
+
+    /**
+     * @var integer
+     */
+    private $mapY;
+
+    /**
+     * @var string
+     */
+    private $mapColor;
+
+    /**
+     * @var boolean
+     */
+    private $isActive;
+
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set name
+     *
+     * @param string $name
+     * @return Person
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+    
+        return $this;
+    }
+
+    /**
+     * Get name
+     *
+     * @return string 
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * Set position
+     *
+     * @param integer $position
+     * @return Person
+     */
+    public function setPosition($position)
+    {
+        $this->position = $position;
+    
+        return $this;
+    }
+
+    /**
+     * Get position
+     *
+     * @return integer 
+     */
+    public function getPosition()
+    {
+        return $this->position;
+    }
+
+    /**
+     * Set mapX
+     *
+     * @param integer $mapX
+     * @return Person
+     */
+    public function setMapX($mapX)
+    {
+        $this->mapX = $mapX;
+    
+        return $this;
+    }
+
+    /**
+     * Get mapX
+     *
+     * @return integer 
+     */
+    public function getMapX()
+    {
+        return $this->mapX;
+    }
+
+    /**
+     * Set mapY
+     *
+     * @param integer $mapY
+     * @return Person
+     */
+    public function setMapY($mapY)
+    {
+        $this->mapY = $mapY;
+    
+        return $this;
+    }
+
+    /**
+     * Get mapY
+     *
+     * @return integer 
+     */
+    public function getMapY()
+    {
+        return $this->mapY;
+    }
+
+    /**
+     * Set mapColor
+     *
+     * @param string $mapColor
+     * @return Person
+     */
+    public function setMapColor($mapColor)
+    {
+        $this->mapColor = $mapColor;
+    
+        return $this;
+    }
+
+    /**
+     * Get mapColor
+     *
+     * @return string 
+     */
+    public function getMapColor()
+    {
+        return $this->mapColor;
+    }
+
+    /**
+     * Set isActive
+     *
+     * @param boolean $isActive
+     * @return Person
+     */
+    public function setIsActive($isActive)
+    {
+        $this->isActive = $isActive;
+    
+        return $this;
+    }
+
+    /**
+     * Get isActive
+     *
+     * @return boolean 
+     */
+    public function getIsActive()
+    {
+        return $this->isActive;
+    }
+}
